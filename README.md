@@ -70,16 +70,15 @@ The ESP32-KSZ8863RLL Development Board is an integrated IoT development platform
 
 ## Buy
 
-For an inquiry, email me jnlee4838@gmail.com
-
 ### Korea
 
-* Smartstore: [**HERE**](https://smartstore.naver.com/radiosystek)
+* Smartstore: [**Buy Here**](https://smartstore.naver.com/radiosystek)
 
 ### International
 
-* buyKorea: Not yet
-* ebay.com: Not yet
+* BuyKorea: [**Buy Here**](https://buykorea.org/ec/prd/selectGoodsDetail.do?goodsSn=3771535)
+
+For support, [**email me**](jnlee4838@gmail.com)
 
 ## Preparation
 
@@ -91,11 +90,11 @@ We are going to use ESP-IDF version 5.4.2 only in this project, you should insta
 
 * Setup ESP-IDF
 
-* go to [**here**](https://github.com/espressif/vscode-esp-idf-extension?tab=readme-ov-file#how-to-use) and try to follow "Hello world" project first.
+* go to [**vscode-esp-idf-extention**](https://github.com/espressif/vscode-esp-idf-extension?tab=readme-ov-file#how-to-use) and try to follow "Hello world" project first.
 
 ## Set-up Flow
 
-* please visit [**here**](https://components.espressif.com/components/espressif/ksz8863/versions/0.2.10/readme) for more information.
+* please visit [**esp-idf registry for ksz8863**](https://components.espressif.com/components/espressif/ksz8863/versions/0.2.10/readme) for more information.
 
 * download and unzip it somewehere you prefer.
 
@@ -169,102 +168,102 @@ the console should be the followings if you have the following connection diagra
 * the router should have DHCP server on.
 
 ```bash
-
-ets Jul 29 2019 12:21:46
-
-rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
-configsip: 0, �ets Jul 29 2019 12:21:46
-
-rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
-configsip: 0, SPIWP:0xee
-clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
-mode:DIO, clock div:2
-load:0x3fff0030,len:6276
-load:0x40078000,len:15736
-load:0x40080400,len:4
---- 0x40080400: _init at ??:?
-load:0x40080404,len:3860
-entry 0x4008063c
-I (29) boot: ESP-IDF v5.4.2 2nd stage bootloader
-I (29) boot: compile time Oct 22 2025 17:19:20
-I (29) boot: Multicore bootloader
-I (31) boot: chip revision: v3.1
-I (34) boot.esp32: SPI Speed      : 40MHz
-I (37) boot.esp32: SPI Mode       : DIO
-I (41) boot.esp32: SPI Flash Size : 4MB
-I (44) boot: Enabling RNG early entropy source...
-I (49) boot: Partition Table:
-I (51) boot: ## Label            Usage          Type ST Offset   Length
-I (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000
-I (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000
-I (71) boot:  2 factory          factory app      00 00 00010000 00100000
-I (77) boot: End of partition table
-I (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=158c8h ( 88264) map
-I (118) esp_image: segment 1: paddr=000258f0 vaddr=3ff80000 size=0001ch (    28) load
-I (119) esp_image: segment 2: paddr=00025914 vaddr=3ffb0000 size=02648h (  9800) load
-I (126) esp_image: segment 3: paddr=00027f64 vaddr=40080000 size=080b4h ( 32948) load
-I (143) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=372b4h (225972) map
-I (220) esp_image: segment 5: paddr=000672dc vaddr=400880b4 size=0799ch ( 31132) load
-I (240) boot: Loaded app from partition at offset 0x10000
-I (240) boot: Disabling RNG early entropy source...
-I (250) cpu_start: Multicore app
-I (259) cpu_start: Pro cpu start user code
-I (259) cpu_start: cpu freq: 240000000 Hz
-I (259) app_init: Application information:
-I (259) app_init: Project name:     ksz8863_simple_switch
-I (264) app_init: App version:      1
-I (267) app_init: Compile time:     Oct 22 2025 17:18:48
-I (272) app_init: ELF file SHA256:  95acbd72a...
-I (277) app_init: ESP-IDF:          v5.4.2
-I (281) efuse_init: Min chip rev:     v0.0
-I (284) efuse_init: Max chip rev:     v3.99
-I (288) efuse_init: Chip rev:         v3.1
-I (293) heap_init: Initializing. RAM available for dynamic allocation:
-I (299) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
-I (304) heap_init: At 3FFB3A20 len 0002C5E0 (177 KiB): DRAM
-I (309) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
-I (314) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
-I (320) heap_init: At 4008FA50 len 000105B0 (65 KiB): IRAM
-I (326) spi_flash: detected chip: generic
-I (329) spi_flash: flash io: dio
-I (333) main_task: Started on CPU0
-I (343) main_task: Calling app_main()
-W (343) simple_switch_example: Simple Switch mode Example...
-
-W (343) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs
-W (353) ksz8863_eth: SW reset resets all Global, MAC and PHY registers!
-I (363) esp_eth.netif.netif_glue: XX XX XX XX XX XX
-I (363) esp_eth.netif.netif_glue: ethernet attached to netif
-I (393) simple_switch_example: Ethernet Started
-I (393) simple_switch_example: Ethernet Link Up
-I (393) simple_switch_example: Ethernet HW Addr XX XX XX XX XX XX
-I (393) simple_switch_example: Ethernet Started
-I (2393) simple_switch_example: Ethernet Started
-I (2393) simple_switch_example: Ethernet Link Up Port 2
-I (2393) simple_switch_example: Ethernet HW Addr 00:00:00:00:00:00
-I (2393) main_task: Returned from app_main()
-I (2393) simple_switch_example: Ethernet Link Up Port 1
-I (2393) simple_switch_example: Dynamic MAC Table content:
-I (2403) simple_switch_example: Ethernet HW Addr 00:00:00:00:00:00
-I (2403) simple_switch_example: valid entries 1
-I (2413) simple_switch_example: port 3
-I (2423) simple_switch_example: XX XX XX XX XX XX
-
-I (4903) esp_netif_handlers: eth ip: 192.168.1.141, mask: 255.255.255.0, gw: 192.168.1.1
-I (4903) simple_switch_example: Ethernet Got IP Address
-I (4903) simple_switch_example: ~~~~~~~~~~~
-I (4903) simple_switch_example: ETHIP:192.168.1.141
-I (4913) simple_switch_example: ETHMASK:255.255.255.0
-I (4913) simple_switch_example: ETHGW:192.168.1.1
-I (4923) simple_switch_example: ~~~~~~~~~~~
-I (7423) simple_switch_example: Dynamic MAC Table content:
-I (7423) simple_switch_example: valid entries 3
-I (7423) simple_switch_example: port 2
-I (7423) simple_switch_example: XX XX XX XX XX XX
-I (7423) simple_switch_example: port 1
-I (7433) simple_switch_example: XX XX XX XX XX XX
-I (7433) simple_switch_example: port 3
-I (7443) simple_switch_example: XX XX XX XX XX XX
+  
+  ets Jul 29 2019 12:21:46
+  
+  rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+  configsip: 0, �ets Jul 29 2019 12:21:46
+  
+  rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+  configsip: 0, SPIWP:0xee
+  clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+  mode:DIO, clock div:2
+  load:0x3fff0030,len:6276
+  load:0x40078000,len:15736
+  load:0x40080400,len:4
+  --- 0x40080400: _init at ??:?
+  load:0x40080404,len:3860
+  entry 0x4008063c
+  I (29) boot: ESP-IDF v5.4.2 2nd stage bootloader
+  I (29) boot: compile time Oct 22 2025 17:19:20
+  I (29) boot: Multicore bootloader
+  I (31) boot: chip revision: v3.1
+  I (34) boot.esp32: SPI Speed      : 40MHz
+  I (37) boot.esp32: SPI Mode       : DIO
+  I (41) boot.esp32: SPI Flash Size : 4MB
+  I (44) boot: Enabling RNG early entropy source...
+  I (49) boot: Partition Table:
+  I (51) boot: ## Label            Usage          Type ST Offset   Length
+  I (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+  I (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+  I (71) boot:  2 factory          factory app      00 00 00010000 00100000
+  I (77) boot: End of partition table
+  I (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=158c8h ( 88264) map
+  I (118) esp_image: segment 1: paddr=000258f0 vaddr=3ff80000 size=0001ch (    28) load
+  I (119) esp_image: segment 2: paddr=00025914 vaddr=3ffb0000 size=02648h (  9800) load
+  I (126) esp_image: segment 3: paddr=00027f64 vaddr=40080000 size=080b4h ( 32948) load
+  I (143) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=372b4h (225972) map
+  I (220) esp_image: segment 5: paddr=000672dc vaddr=400880b4 size=0799ch ( 31132) load
+  I (240) boot: Loaded app from partition at offset 0x10000
+  I (240) boot: Disabling RNG early entropy source...
+  I (250) cpu_start: Multicore app
+  I (259) cpu_start: Pro cpu start user code
+  I (259) cpu_start: cpu freq: 240000000 Hz
+  I (259) app_init: Application information:
+  I (259) app_init: Project name:     ksz8863_simple_switch
+  I (264) app_init: App version:      1
+  I (267) app_init: Compile time:     Oct 22 2025 17:18:48
+  I (272) app_init: ELF file SHA256:  95acbd72a...
+  I (277) app_init: ESP-IDF:          v5.4.2
+  I (281) efuse_init: Min chip rev:     v0.0
+  I (284) efuse_init: Max chip rev:     v3.99
+  I (288) efuse_init: Chip rev:         v3.1
+  I (293) heap_init: Initializing. RAM available for dynamic allocation:
+  I (299) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+  I (304) heap_init: At 3FFB3A20 len 0002C5E0 (177 KiB): DRAM
+  I (309) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+  I (314) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+  I (320) heap_init: At 4008FA50 len 000105B0 (65 KiB): IRAM
+  I (326) spi_flash: detected chip: generic
+  I (329) spi_flash: flash io: dio
+  I (333) main_task: Started on CPU0
+  I (343) main_task: Calling app_main()
+  W (343) simple_switch_example: Simple Switch mode Example...
+  
+  W (343) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs
+  W (353) ksz8863_eth: SW reset resets all Global, MAC and PHY registers!
+  I (363) esp_eth.netif.netif_glue: XX XX XX XX XX XX
+  I (363) esp_eth.netif.netif_glue: ethernet attached to netif
+  I (393) simple_switch_example: Ethernet Started
+  I (393) simple_switch_example: Ethernet Link Up
+  I (393) simple_switch_example: Ethernet HW Addr XX XX XX XX XX XX
+  I (393) simple_switch_example: Ethernet Started
+  I (2393) simple_switch_example: Ethernet Started
+  I (2393) simple_switch_example: Ethernet Link Up Port 2
+  I (2393) simple_switch_example: Ethernet HW Addr 00:00:00:00:00:00
+  I (2393) main_task: Returned from app_main()
+  I (2393) simple_switch_example: Ethernet Link Up Port 1
+  I (2393) simple_switch_example: Dynamic MAC Table content:
+  I (2403) simple_switch_example: Ethernet HW Addr 00:00:00:00:00:00
+  I (2403) simple_switch_example: valid entries 1
+  I (2413) simple_switch_example: port 3
+  I (2423) simple_switch_example: XX XX XX XX XX XX
+  
+  I (4903) esp_netif_handlers: eth ip: 192.168.1.141, mask: 255.255.255.0, gw: 192.168.1.1
+  I (4903) simple_switch_example: Ethernet Got IP Address
+  I (4903) simple_switch_example: ~~~~~~~~~~~
+  I (4903) simple_switch_example: ETHIP:192.168.1.141
+  I (4913) simple_switch_example: ETHMASK:255.255.255.0
+  I (4913) simple_switch_example: ETHGW:192.168.1.1
+  I (4923) simple_switch_example: ~~~~~~~~~~~
+  I (7423) simple_switch_example: Dynamic MAC Table content:
+  I (7423) simple_switch_example: valid entries 3
+  I (7423) simple_switch_example: port 2
+  I (7423) simple_switch_example: XX XX XX XX XX XX
+  I (7423) simple_switch_example: port 1
+  I (7433) simple_switch_example: XX XX XX XX XX XX
+  I (7433) simple_switch_example: port 3
+  I (7443) simple_switch_example: XX XX XX XX XX XX
 
 ```
 
@@ -284,7 +283,7 @@ I (7443) simple_switch_example: XX XX XX XX XX XX
 
 ```bash
 
-ipconfig /all
+  ipconfig /all
 
 ```
 
@@ -305,43 +304,43 @@ ipconfig /all
 Line no. 321
 
 ```bash
-// Sync semaphore is needed since main task local variables are used during initialization in other tasks
-init_done = xSemaphoreCreateBinary();
-assert(init_done);
-
-// Periodically print content of Dynamic MAC table
-xTaskCreate(print_dyn_mac, "print_dyn_mac", 4096, p1_eth_handle, 5, NULL);
-xSemaphoreTake(init_done, portMAX_DELAY);
-// Periodically transmit test message
-xTaskCreate(transmit_l2test_msg, "tx_test_msg", 4096, NULL, 4, NULL);
-
-vSemaphoreDelete(init_done);
+  // Sync semaphore is needed since main task local variables are used during initialization in other tasks
+  init_done = xSemaphoreCreateBinary();
+  assert(init_done);
+  
+  // Periodically print content of Dynamic MAC table
+  xTaskCreate(print_dyn_mac, "print_dyn_mac", 4096, p1_eth_handle, 5, NULL);
+  xSemaphoreTake(init_done, portMAX_DELAY);
+  // Periodically transmit test message
+  xTaskCreate(transmit_l2test_msg, "tx_test_msg", 4096, NULL, 4, NULL);
+  
+  vSemaphoreDelete(init_done);
 ```
 Line no. 72
 
 ```bash
-test_vfs_eth_tap_msg_t test_msg = {
-    .header = {
-        .src.addr = {0},
-        .dest.addr = { 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF }, // broadcast
-        .type = ntohs(eth_type_filter),
-    },
-    .str = "This is ESP32 L2 TAP test msg"
-};
+  test_vfs_eth_tap_msg_t test_msg = {
+      .header = {
+          .src.addr = {0},
+          .dest.addr = { 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF }, // broadcast
+          .type = ntohs(eth_type_filter),
+      },
+      .str = "This is ESP32 L2 TAP test msg"
+  };
 ```
 
 ### ESP-IDF MONITOR Terminal
 
 * The following data should be out every five secs.
 ```bash
-I (7423) simple_switch_example: Dynamic MAC Table content:
-I (7423) simple_switch_example: valid entries 3
-I (7423) simple_switch_example: port 2
-I (7423) simple_switch_example: XX XX XX XX XX XX
-I (7423) simple_switch_example: port 1
-I (7433) simple_switch_example: XX XX XX XX XX XX
-I (7433) simple_switch_example: port 3
-I (7443) simple_switch_example: XX XX XX XX XX XX
+  I (7423) simple_switch_example: Dynamic MAC Table content:
+  I (7423) simple_switch_example: valid entries 3
+  I (7423) simple_switch_example: port 2
+  I (7423) simple_switch_example: XX XX XX XX XX XX
+  I (7423) simple_switch_example: port 1
+  I (7433) simple_switch_example: XX XX XX XX XX XX
+  I (7433) simple_switch_example: port 3
+  I (7443) simple_switch_example: XX XX XX XX XX XX
 ```
 
 ### Wire Shark
