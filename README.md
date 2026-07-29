@@ -1,7 +1,7 @@
 
-# ESP32 + KSZ8863RLL Development Board — Wi-Fi and Dual Ethernet in One!
+# ESP32 KSZ8863 Dual Ethernet Switch Board
 
-The ESP32-KSZ8863RLL Development Board is an integrated IoT development platform that combines Wi-Fi wireless networking with a wired dual-port Ethernet switch. Based on the powerful dual-core ESP32 MCU and the KSZ8863RLL 2-port switch chip, it is ideal for developing gateways, bridges, smart factories, and robot network equipment. also it makes your custom ethernet daisy-chain networking.
+The ESP32-KSZ8863 Development Board is an integrated IoT development platform that combines Wi-Fi as well as dual-port Ethernet port with managed switch function. Based on the powerful dual-core ESP32 MCU and the KSZ8863 2-port switch chip, it is ideal for developing **IOT gateways, Modbus TCP slave controllers, bridges, smart sensors, and robot network equipment**, whcich require **high bandwidth speed and Ethernet based daisy-chain networking**.
 
 
 ## Screenshots
@@ -21,7 +21,7 @@ The ESP32-KSZ8863RLL Development Board is an integrated IoT development platform
 
 * ESP32 Dual-Core MCU – Integrated Wi-Fi / BLE Support!
 
-* KSZ8863RLL 2-Port Ethernet Switch – Stable Wired Network Configuration
+* KSZ8863 2-Port Ethernet Switch – Stable Wired Network Configuration
 
 * Ethernet Daisy-Chain Configuration
 
