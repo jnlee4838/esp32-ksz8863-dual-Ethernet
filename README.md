@@ -76,7 +76,7 @@ The ESP32-KSZ8863 Development Board is an integrated IoT development platform th
 
 ### International
 
-* BuyKorea: [**Buy Here**](https://buykorea.org/ec/prd/selectGoodsDetail.do?goodsSn=3771535)
+* Ebay: [**Buy Here**](https://www.ebay.com/itm/318685668449)
 
 For support, [**email me**](jnlee4838@gmail.com)
 
